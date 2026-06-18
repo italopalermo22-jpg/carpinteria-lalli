@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f1eb;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+    background-color: rgba(199,157,132,0.95);
+
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 10px 30px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.logo img{
+    width: 60px;
+    height: auto;
+    display: block;
+}
+
+
+
+nav ul{
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #d8b08c;
+}
+
+/* ---------------- MAIN ---------------- */
+
+main{
+    padding: 60px 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("../images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: calc(100vh - 80px);
+
+    width: 100vw;
+
+    margin-left: calc(-50vw + 50%);
+
+    margin-top: -60px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-bottom: 80px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+
+.overlay{
+    max-width: 750px;
+}
+
+.hero h2{
+    color: white;
+
+    font-size: 60px;
+
+    font-weight: 600;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 25px;
+
+    line-height: 1.1;
+}
+
+
+.hero p{
+    color: white;
+
+    font-size: 20px;
+
+    margin-bottom: 35px;
+}
+
+
+.boton{
+    background-color: #d8b08c;
+
+    color: #2b2b2b;
+
+    padding: 14px 28px;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.boton:hover{
+    background-color: #f0d2b5;
+}
+
+/* ---------------- INFO ---------------- */
+
+.info{
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.info h2{
+    font-size: 38px;
+
+    margin-bottom: 25px;
+
+    color: #5c3b24;
+}
+
+.info p{
+    font-size: 18px;
+}
+
+/* ---------------- TARJETAS ---------------- */
+
+.tarjetas{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+}
+
+.card{
+    background-color: white;
+
+    width: 320px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-contenido{
+    padding: 25px;
+}
+
+.card h3{
+    color: #5c3b24;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+.card p{
+    font-size: 16px;
+}
+
+/* ---------------- NOSOTROS ---------------- */
+
+.nosotros{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 90px;
+}
+
+.nosotros-texto{
+    max-width: 500px;
+}
+
+.nosotros-texto h2{
+
+    font-size: 38px;
+
+    color: #5c3b24;
+
+    margin-bottom: 25px;
+}
+
+.nosotros-texto p{
+
+    margin-bottom: 20px;
+
+    font-size: 17px;
+}
+
+.nosotros-imagen img{
+
+    width: 450px;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ---------------- GALERIA ---------------- */
+
+.galeria{
+    margin-top: 60px;
+}
+
+.galeria h2{
+    text-align: center;
+
+    font-size: 38px;
+
+    color: #5c3b24;
+
+    margin-bottom: 40px;
+}
+
+.galeria-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+.galeria-grid img{
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------------- CONTACTO ---------------- */
+
+.contacto{
+    text-align: center;
+}
+
+.contacto h2{
+    font-size: 38px;
+
+    margin-bottom: 30px;
+
+    color: #5c3b24;
+}
+
+.contacto p{
+    margin-bottom: 15px;
+
+    font-size: 18px;
+}
+
+.contacto a{
+    color: #5c3b24;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+    background-color: #5c3b24;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+
+    margin-top: 80px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px){
+
+    header{
+        padding: 15px 20px;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
+    nav ul{
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    main{
+        padding: 40px 20px;
+    }
+
+    .hero{
+        height: auto;
+
+        padding: 100px 20px;
+    }
+
+    .hero h2{
+        font-size: 34px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    .info h2,
+    .galeria h2,
+    .contacto h2,
+    .nosotros-texto h2{
+        font-size: 30px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .nosotros-imagen img{
+        width: 100%;
+    }
+
+}/* –––––––– MEJORAS PROFESIONALES –––––––– */
+
+main{
+max-width: 1400px;
+margin: auto;
+}
+
+.card:hover{
+transform: translateY(-8px);
+box-shadow: 0px 12px 25px rgba(0,0,0,0.15);
+}
+
+.galeria-grid img{
+transition: transform 0.3s ease;
+}
+
+.galeria-grid img:hover{
+transform: scale(1.03);
+}
+
+/* –––––––– FORMULARIO CONTACTO –––––––– */
+
+.contacto{
+max-width: 1200px;
+margin: auto;
+}
+
+.contacto-intro{
+max-width: 750px;
+margin: 0 auto 50px auto;
+}
+
+.contacto-contenedor{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 40px;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+
+.contacto-info{
+background: white;
+padding: 35px;
+border-radius: 12px;
+box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+flex: 1;
+min-width: 300px;
+text-align: left;
+}
+
+.contacto-info h3{
+color: #5c3b24;
+margin-bottom: 20px;
+}
+
+.formulario-contacto{
+background: white;
+padding: 35px;
+border-radius: 12px;
+box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+flex: 1;
+min-width: 320px;
+
+display: flex;
+flex-direction: column;
+gap: 15px;
+
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+width: 100%;
+padding: 14px;
+border: 1px solid #d8d8d8;
+border-radius: 8px;
+font-family: inherit;
+font-size: 15px;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus{
+outline: none;
+border-color: #c79d84;
+}
+
+.formulario-contacto button{
+background-color: #5c3b24;
+color: white;
+border: none;
+padding: 15px;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.formulario-contacto button:hover{
+background-color: #7a5236;
+}
+
+@media (max-width: 768px){
+
+.contacto-contenedor{
+    flex-direction: column;
+}
+.contacto-info,
+.formulario-contacto{
+    width: 100%;
+}
+
+}/* =====================================
+ESTILO PREMIUM CARPINTERÍA LALLI
+===================================== */
+
+/* Animación suave general */
+
+html{
+scroll-behavior: smooth;
+}
+
+body{
+animation: fadePage 0.8s ease;
+}
+
+@keyframes fadePage{
+from{
+opacity: 0;
+}
+to{
+opacity: 1;
+}
+}
+
+/* Header más premium */
+
+header{
+position: sticky;
+top: 0;
+z-index: 1000;
+
+backdrop-filter: blur(12px);
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+}
+
+/* Navegación */
+
+nav a{
+position: relative;
+transition: all 0.3s ease;
+}
+
+nav a::after{
+content: “”;
+position: absolute;
+left: 0;
+bottom: -6px;
+
+width: 0;
+height: 2px;
+background-color: white;
+transition: width 0.3s ease;
+
+}
+
+nav a:hover::after{
+width: 100%;
+}
+
+/* Hero */
+
+.hero{
+overflow: hidden;
+
+box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+
+}
+
+.hero h2{
+font-size: 60px;
+font-weight: 600;
+letter-spacing: -1px;
+}
+
+.hero p{
+font-size: 20px;
+}
+
+/* Botón principal */
+
+.boton{
+transition: all 0.35s ease;
+box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.boton:hover{
+transform: translateY(-3px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+}
+
+/* Tarjetas */
+
+.card{
+transition:
+transform 0.35s ease,
+box-shadow 0.35s ease;
+}
+
+.card:hover{
+transform: translateY(-10px);
+box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+}
+
+.card img{
+transition: transform 0.5s ease;
+}
+
+.card:hover img{
+transform: scale(1.05);
+}
+
+/* Sección nosotros */
+
+.nosotros-imagen img{
+transition:
+transform 0.4s ease,
+box-shadow 0.4s ease;
+}
+
+.nosotros-imagen img:hover{
+transform: scale(1.02);
+box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+/* Galería */
+
+.galeria-grid img{
+transition:
+transform 0.4s ease,
+box-shadow 0.4s ease;
+}
+
+.galeria-grid img:hover{
+transform: scale(1.04);
+box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+}
+
+/* Formulario */
+
+.formulario-contacto,
+.contacto-info{
+transition:
+transform 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+.formulario-contacto:hover,
+.contacto-info:hover{
+transform: translateY(-4px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+transition:
+border-color 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus{
+box-shadow: 0 0 0 4px rgba(199,157,132,0.15);
+}
+
+.formulario-contacto button{
+transition: all 0.3s ease;
+}
+
+.formulario-contacto button:hover{
+transform: translateY(-2px);
+}
+
+/* Footer */
+
+footer{
+box-shadow: 0 -8px 20px rgba(0,0,0,0.08);
+}
+
